@@ -9,7 +9,7 @@ body{
 
 #countdown {
   display: block;
-  align-self: center;
+  text-align: center;
 }
 #nav-placeholder {
   width: 100%;
