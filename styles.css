@@ -61,6 +61,7 @@ body{
   list-style: none;
   display: inline;
   text-decoration: none;
+  border-style: solid;
   border-top: 1px;
   border-color: orange;
 }
