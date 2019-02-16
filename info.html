@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--in my previous version, i utilised bootstrap to try and make my page more dynamic.
+	however, i felt that it was very messy and the template underutilised jquery and js a lot.
+	making the pages unnecessarily long. in this iteration i will be using jquery to add my navbars and
+	footers. This enables each page to contain only the information needed for readers, which makes
+	it easier to design the page as well, since i do not need to change each page individually
+	when links change. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+
+	<title>YRPR - Race Information</title>
+	<!-- it must be noted that if you try to open the files locally on Chrome or IE
+		it will not show the header and footers as they prevent loading multiple html files for security reasons -->
+	<script> 
+	$(function(){
+	  $("#header").load("header.html"); 
+	  $("#footer").load("footer.html"); 
+	});
+	</script> 
+</head>
+
+<body>
+
+	<!-- load header -->
+	<div id="header"></div>
+
+	<!-- rest of page here -->
+	<div class="container">
+		<div class="container content">
+			<div class="container content race">
+			<img src="https://static.wixstatic.com/media/7f255f_6c1406527ad14b39bd3841f7247ae90d~mv2_d_3456_2304_s_2.jpg/v1/fill/w_1101,h_734,al_c,q_90,usm_0.66_1.00_0.01/7f255f_6c1406527ad14b39bd3841f7247ae90d~mv2_d_3456_2304_s_2.webp" alt="race start"
+			style="width:50%;height:50%;">
+			<h1>RACE DETAILS</h1>
+				<h2>15 September 2019, Sunday</h2>
+				<p>6am - 1pm</p>
+				<p>Flag off for 10km: 7.15am</p>
+				<p>Flag off for other categories: 7.45am</p>
+				​
+				<h2>Start Point:</h2>
+				<p>SAF Field, Farnborough Road
+				(Near Changi Village)</p>
+				​
+				<h2>End Point:</h2>
+				<p>Changi Prison Complex</p>
+				<p>Stay tuned for more details closer to the event date.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<table class="racetable">
+			<thead>
+			<tr>
+				<th>Race Category</th>
+				<th>Early Bird Pricing (Before 22 July)</th>
+				<th>Regular Pricing</th>
+				<th>Corporate Pricing</th>
+			</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+				<td>5KM Fun Walk</td><td>$28</td><td>$32</td><td>$28</td>
+				</tr>
+				<tr>
+				<td>10KM Competitive Run</td><td>$45/td><td>$50</td><td>$45</td>
+				</tr>
+				<tr>
+				<td>5KM Competitive Team Run(4pax)</td><td colspan="3">$112</td>
+			</tbody>
+		</table>
+	</div>
+
+	<!-- load footer aka contact us page -->
+	<div id="footer"></div>
+
+
+</body>
+</html>

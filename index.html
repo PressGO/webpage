@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--in my previous version, i utilised bootstrap to try and make my page more dynamic.
+	however, i felt that it was very messy and the template underutilised jquery and js a lot.
+	making the pages unnecessarily long. in this iteration i will be using jquery to add my navbars and
+	footers. This enables each page to contain only the information needed for readers, which makes
+	it easier to design the page as well, since i do not need to change each page individually
+	when links change. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+
+	<title>Yellow Ribbon Prison Run</title>
+	<!-- it must be noted that if you try to open the files locally on Chrome or IE
+		it will not show the header and footers as they prevent loading multiple html files for security reasons -->
+	<script> 
+	$(function(){
+	  $("#header").load("header.html"); 
+	  $("#footer").load("footer.html"); 
+	});
+	</script> 
+</head>
+
+<body>
+	<!-- load header -->
+	<div id="header"></div>
+
+	<!-- rest of page here -->
+	<div class="container">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/VfSlge-_tN8?autoplay=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<div class="container">
+		<div class="container content">
+			<h1>YELLOW RIBBON PROJECT</h1>
+				<p>Every year, more than 9,000 ex-offenders complete their imprisonment and are released from the various prisons and drug rehabilitation centres (DRCs). It is disheartening that ex-offenders have to live with the stigma of having served time behind bars when they are released from prison, one that can often be more punishing than the prison sentence itself. Many ex-offenders, once released, find themselves literally stepping into a second prison. This time it would be a prison with invisible bars, of suspicion, mistrust and discrimination.</p>
+
+				​
+
+				<p>The best rehabilitation regime during incarceration is of no use if ex-offenders find themselves rejected at every turn when they are released into the larger community. Through the Yellow Ribbon Project, we hope to promote a more accepting society, one that is willing to give ex-offenders a second chance at making good. It is important that we help unlock the second prison for our inmates, even as we let them out of the physical one.</p>
+				​
+			<h1>YELLOW RIBBON FUND</h1>
+				<p>The Yellow Ribbon Fund (YRF) is a registered charity and an Institute of Public Character (IPC) under the National Council of Social Service (NCSS). Established in 2004, YRF is devoted to the development and implementation of rehabilitation and reintegration programmes for ex-offenders and support services for families of the incarcerated. It aims to help ex-offenders reintegrate successfully into the society, reconcile with their families and find hope in a new beginning.</p>
+		</div>
+	</div>
+
+	<div class="imagegallery">
+		<img src="https://static.wixstatic.com/media/7f255f_0b143711df7c4929af99827f6905908b~mv2_d_3216_2136_s_2.jpg/v1/fill/w_1105,h_734,al_c,q_90,usm_0.66_1.00_0.01/7f255f_0b143711df7c4929af99827f6905908b~mv2_d_3216_2136_s_2.webp" alt="Rain or Shine">
+		<img src="https://static.wixstatic.com/media/7f255f_aa8f5b92db324142ab990c93374f4bed~mv2_d_5215_3725_s_4_2.jpg/v1/fill/w_1027,h_734,al_c,q_90,usm_0.66_1.00_0.01/7f255f_aa8f5b92db324142ab990c93374f4bed~mv2_d_5215_3725_s_4_2.webp" alt="race start">
+		<img src="https://static.wixstatic.com/media/7f255f_72501cecedb2403e9ebb33d21975dc6a~mv2_d_5760_3840_s_4_2.jpg/v1/fill/w_1101,h_734,al_c,q_90,usm_0.66_1.00_0.01/7f255f_72501cecedb2403e9ebb33d21975dc6a~mv2_d_5760_3840_s_4_2.webp" alt="Never too old">
+	</div>
+		
+	<!-- load footer aka contact us page -->
+	<div id="footer"></div>
+
+
+</body>
+</html>
