@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--in my previous version, i utilised bootstrap to try and make my page more dynamic.
+	however, i felt that it was very messy and the template underutilised jquery and js a lot.
+	making the pages unnecessarily long. in this iteration i will be using jquery to add my navbars and
+	footers. This enables each page to contain only the information needed for readers, which makes
+	it easier to design the page as well, since i do not need to change each page individually
+	when links change. -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+
+	<title>YRPR - About US</title>
+	<!-- it must be noted that if you try to open the files locally on Chrome or IE
+		it will not show the header and footers as they prevent loading multiple html files for security reasons -->
+	<script> 
+	$(function(){
+	  $("#header").load("header.html"); 
+	  $("#footer").load("footer.html"); 
+	});
+	</script> 
+</head>
+
+<body>
+	<div id="wrap">
+	<!-- load header -->
+	<div id="header"></div>
+
+	<!-- rest of page here -->
+	<div id="body">
+		<div class="container">
+			<div class="container content">
+			<h1>3 ‘A’S: GOALS OF THE YELLOW RIBBON PROJECT</h1>
+
+			<p>To create Awareness of giving second chances to ex-offenders,</p>
+
+			<p>To generate Acceptance of ex-offenders and their families into the community,</p>
+
+			<p>To inspire Community Action to support the rehabilitation and reintegration of ex-offenders.</p>
+
+			<h1>KEYS TO UNLOCKING THE SECOND ‘PRISON’</h1>
+			<p>A verse in the song reads:<br>
+
+			“I’m really still in prison and my love, she holds the key, a simple yellow ribbon’s what I need to set me free…”<br>
+
+			- Lyrics by Irwin Levine and L Russell Brown (1973)</p>
+
+			​
+
+			<p>The Yellow Ribbon Project’s moniker is adapted from the 1973 Tony Orlando and Dawn hit song “Tie a Yellow Ribbon Round the Ole Oak Tree”, which aptly describes a released prisoner’s desire for forgiveness and acceptance.</p>
+
+			<p>You can find out more here: <a href="https://www.yellowribbonprisonrun.sg/">https://www.yellowribbonprisonrun.sg</a></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- load footer aka contact us page -->
+	<div id="footer"></div>
+</div>
+
+
+</body>
+</html>
