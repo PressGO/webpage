@@ -31,7 +31,8 @@ body{
 }
 
 #nav-placeholder li {
-  float: center; }
+  float: center;
+}
 
 #nav-placeholder li a {
   float: center;
