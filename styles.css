@@ -65,6 +65,9 @@ body{
 
 #foot ul{
   border-top: 1px solid orange;
+  list-style: none;
+  display: inline;
+  text-decoration: none;
 }
 
 #foot ul li{
