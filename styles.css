@@ -62,6 +62,8 @@ body{
 
 .foot ul {
   list-style: none;
+  display: inline;
+  color: #ffff00;
 }
 
 .foot ul li{
