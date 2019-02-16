@@ -58,6 +58,8 @@ body{
 .foot {
   background-color: 000000;
   color: #ffff00;
+  list-style: none;
+  display: inline;
 }
 
 .foot ul {
