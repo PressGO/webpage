@@ -1,0 +1,15 @@
+/** i was gonna add the styles for the header and footer here
+  but was unable to determine why it couldnt load when on github **/
+body{
+  margin: 0px;
+  font: normal 13px/20px Arial, Helvetica, sans-serif;
+  word-wrap: break-word;
+  color: #ffff00;
+  background: #000000;
+}
+
+.container{
+  text-align: center;
+  color: #ffff00;
+  background: #000000;
+}
